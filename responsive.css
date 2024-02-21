@@ -10,31 +10,59 @@
 }
 
 /*Dispostivos Médios (Tablets deitados, 768px para cima) */
-@media only screen and (min-width: 768px) and (max-width:991px){
-    .header-img{
-        width: 500px;
-        height: 500px;
-        top: 200px;
-        margin-right: 400px;
-        
-        
-    }
-    .header-content > h2{
-        font-size: 25px;
-    }
-   
+@media only screen and  (max-width:991px){
+   header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Alinha o texto no centro */
+   }
+        .img-header{
+            width: 500px;
+            height: auto;
+        }
+
+        .header-content  p{
+          text-align: center;
+            
+        }
+         a#btn-content{
+            margin-top: 20px;
+            text-align: center;
+            
+            left: 100px;
+        }
+        .img-header{
+           display: block;
+           position: relative;
+           left: 100px;
+           bottom: 100px;
+        }
+        .menu{
+            display: none;
+}
+        .logo{
+            font-size: 2em;
+            align-items: center;
+            justify-content:center;
+            margin-top: 100px;
+}
+        .header-content > h2{
+            font-size: 25px;
+}
     footer{
-        width: 100%;
-    }
-    .menu{
-        display: none;
-    }
-    .logo{
-        font-size: 2em;
-        align-items: center;
-        justify-content:center;
-        margin-top: 100px;
-    }
+        width:100%;
+}
+        .whats {
+            left:670px;
+            position: fixed;
+}
+        a.whats > img{
+            width: 80px;
+
+}
+   
     section .service{
         display: flex;
         flex-direction: column;
@@ -43,27 +71,33 @@
         align-items: center;
         justify-content:center;
         
-    }
+}
+    .img-card{
+        left: 200px;
+}
    
 }
 
 /* Dispostivos Largos (laptops/desktops, 992px para cima) */
-@media only screen and (min-width: 992px) and (max-width:1199px) {
+@media only screen and  (max-width:1199px) {
     .header-img{
         top: 200px;
         width: 600px;
         height: 600px;
         margin-right: 100px;
 
-    }
+}
     .whats img{
         width: 40px;
-    }
+}
     
-   
+   .img-card{
+       
+    left: 70px;
+}
 }
 
 /* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1440px) {
 
 }
